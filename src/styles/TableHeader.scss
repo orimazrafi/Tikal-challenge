@@ -1,0 +1,39 @@
+@import "./variables";
+.table-container {
+  width: 80%;
+  margin: 40px auto;
+  box-shadow: 0 0 20px $light-grey;
+  border: 1px solid $table-border;
+}
+
+.table-head-container {
+  position: relative;
+  color: $head-text;
+  display: flex;
+
+  font-weight: bold;
+  border-bottom: 2px solid $light-grey;
+  background: $footer-header-background;
+
+  .table-head {
+    flex: 1;
+    margin: 5px 0;
+  }
+  .table-head:nth-child(3) {
+    flex: 4;
+  }
+  .table-head:nth-child(4) {
+    flex: 2.5;
+  }
+  .table-head::before {
+    position: relative;
+    right: 3px;
+    color: $content-color;
+    content: "|";
+  }
+  .table-head:nth-child(1)::before {
+    margin: 5px 2px;
+    position: relative;
+    content: "";
+  }
+}

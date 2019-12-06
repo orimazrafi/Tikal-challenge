@@ -1,0 +1,15 @@
+@import "./variables";
+.table-footer {
+  border-top: 2px solid $light-grey;
+  color: $footer-text;
+  display: flex;
+  font-weight: bold;
+  background: $footer-header-background;
+  .footer-space {
+    flex: 1;
+  }
+  .missions-length {
+    font-weight: 500;
+    margin: 8px;
+  }
+}

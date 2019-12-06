@@ -1,0 +1,22 @@
+@import "./variables.scss";
+.table-body-container {
+  display: flex;
+  border-bottom: 1px solid $table-background;
+
+  .table-body {
+    margin: 5px;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    height: 15px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .table-body:nth-child(3) {
+    flex: 4;
+  }
+  .table-body:nth-child(4) {
+    flex: 2.5;
+  }
+}
